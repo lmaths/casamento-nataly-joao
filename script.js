@@ -386,7 +386,7 @@ function initFormValidation() {
     const form = document.getElementById('rsvpForm');
     if (!form) return;
 
-    const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbyv2L3itlKCWQu_oPyKnC_B08Fc5Hi6L_Hq3cJtGJjI52KPJ4U-TRqp-X2w4IxIktx97w/exec';
+    const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbxk3AawfXFnQakEME9siSYG7fGI05WVDXpSMExujwnmPFJ_RnkBi56Ll3OcR9iy9RQsWw/exec';
 
     form.addEventListener('submit', function(e) {
         e.preventDefault();
