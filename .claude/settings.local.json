@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.bibliaon.com)",
+      "WebFetch(domain:maps.google.com)",
+      "WebFetch(domain:www.google.com)",
+      "Bash(gh auth:*)",
+      "Bash(git --version)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

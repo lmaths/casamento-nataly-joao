@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Casamento de Nataly e João Gabriel - Celebre conosco este momento especial">
+    <title>Nataly & João Gabriel - Nosso Casamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-heart">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </div>
+            <div class="loader-names">N & JG</div>
+        </div>
+    </div>
+
+    <!-- Cursor Custom -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="logo">
+                <span class="logo-text" data-text="N & JG">N & JG</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li style="--i: 0"><a href="#inicio">Início</a></li>
+                <li style="--i: 1"><a href="#confirmar">Confirme Presença</a></li>
+                <li style="--i: 2"><a href="#presentes">Presentes</a></li>
+                <li style="--i: 3"><a href="#informacoes">Informações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg">
+            <div class="hero-bg-image"></div>
+            <div class="hero-bg-overlay"></div>
+        </div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <p class="hero-verse">
+                <span class="verse-text">"Assim, eles já não são dois, mas uma só carne.<br>Portanto, o que Deus uniu, ninguém separe."</span>
+                <span class="verse-reference">Mateus 19:6</span>
+            </p>
+            <div class="hero-line"></div>
+            <h1 class="hero-title">
+                <span class="title-line">
+                    <span class="title-word" data-aos="fade-up">Nataly</span>
+                </span>
+                <span class="title-ampersand" data-aos="zoom-in" data-aos-delay="300">&</span>
+                <span class="title-line">
+                    <span class="title-word" data-aos="fade-up" data-aos-delay="200">João Gabriel</span>
+                </span>
+            </h1>
+            <div class="hero-line"></div>
+            <p class="hero-invite">
+                <span class="invite-text">Com a bênção de seus pais, convidam para o casamento</span>
+            </p>
+            <div class="hero-date-full">
+                <span>02 de Maio de 2026</span>
+            </div>
+            <div class="hero-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                <span>Paróquia Assunção de Nossa Senhora - São Paulo</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section" data-aos="fade">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-reveal">Contagem Regressiva</span>
+            </h2>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item" data-aos="flip-up" data-aos-delay="0">
+                    <div class="countdown-card">
+                        <div class="countdown-card-inner">
+                            <span class="countdown-number" id="months">00</span>
+                        </div>
+                    </div>
+                    <span class="countdown-label">Meses</span>
+                </div>
+                <div class="countdown-item" data-aos="flip-up" data-aos-delay="100">
+                    <div class="countdown-card">
+                        <div class="countdown-card-inner">
+                            <span class="countdown-number" id="days">00</span>
+                        </div>
+                    </div>
+                    <span class="countdown-label">Dias</span>
+                </div>
+                <div class="countdown-item" data-aos="flip-up" data-aos-delay="200">
+                    <div class="countdown-card">
+                        <div class="countdown-card-inner">
+                            <span class="countdown-number" id="hours">00</span>
+                        </div>
+                    </div>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item" data-aos="flip-up" data-aos-delay="300">
+                    <div class="countdown-card">
+                        <div class="countdown-card-inner">
+                            <span class="countdown-number" id="minutes">00</span>
+                        </div>
+                    </div>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item" data-aos="flip-up" data-aos-delay="400">
+                    <div class="countdown-card">
+                        <div class="countdown-card-inner">
+                            <span class="countdown-number" id="seconds">00</span>
+                        </div>
+                    </div>
+                    <span class="countdown-label">Segundos</span>
+                </div>
+            </div>
+            <a href="#confirmar" class="btn btn-primary magnetic">
+                <span>Save the Date</span>
+                <div class="btn-bg"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Couple Section -->
+    <section class="couple-section">
+        <div class="container">
+            <div class="couple-content" data-aos="fade-up">
+                <div class="couple-image-wrapper">
+                    <div class="couple-image-frame">
+                        <img src="images/casal.jpg" alt="Nataly e João" loading="lazy">
+                    </div>
+                    <div class="couple-image-border"></div>
+                </div>
+                <div class="couple-names">
+                    <span class="couple-name">Nataly</span>
+                    <span class="couple-ampersand">&</span>
+                    <span class="couple-name">João Gabriel</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Cards Section -->
+    <section id="informacoes" class="info-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-reveal">Informações</span>
+            </h2>
+            <div class="info-grid">
+                <div class="info-card info-card-image hover-3d" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-image">
+                        <img src="images/igreja aquarela.png" alt="Paróquia Assunção de Nossa Senhora" loading="lazy">
+                    </div>
+                    <div class="card-inner">
+                        <h3>A Cerimônia</h3>
+                        <p>Paróquia Assunção de Nossa Senhora</p>
+                        <p class="info-detail">Alameda Lorena, 665A - Jardim Paulista</p>
+                        <p class="info-detail">São Paulo - SP</p>
+                        <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x94ce59c4dc8e7bbf:0xab8878c702e8ed74" target="_blank" class="btn btn-outline magnetic"><span>Ver no Mapa</span></a>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="info-card hover-3d" data-aos="fade-up" data-aos-delay="50">
+                    <div class="card-inner">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/>
+                            </svg>
+                        </div>
+                        <h3>A Festa</h3>
+                        <p>Restaurante Famiglia Geraci</p>
+                        <p class="info-detail">Rua Fidêncio Ramos, 69 - Vila Olímpia</p>
+                        <p class="info-detail">São Paulo - SP</p>
+                        <a href="https://www.google.com/maps/search/Restaurante+Famiglia+Geraci+Rua+Fid%C3%AAncio+Ramos+69+Vila+Ol%C3%ADmpia+S%C3%A3o+Paulo" target="_blank" class="btn btn-outline magnetic"><span>Ver no Mapa</span></a>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="info-card hover-3d" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-inner">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                                <path d="M16 2v4M8 2v4M3 10h18"/>
+                            </svg>
+                        </div>
+                        <h3>Cronograma</h3>
+                        <p>20h - Início da Cerimônia</p>
+                        <p class="info-detail">21h30 - Recepção da Festa</p>
+                        <p class="info-detail">22h - Fotos e Coquetel</p>
+                        <p class="info-detail">22h30 - Início do Jantar</p>
+                        <p class="info-detail">01h - Encerramento</p>
+                        <div class="info-divider"></div>
+                        <p class="info-detail"><strong>Estacionamento Igreja:</strong> Gratuito</p>
+                        <p class="info-detail"><strong>Estacionamento Festa:</strong> Valet R$ 30,00</p>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="info-card dresscode-card-expanded hover-3d" data-aos="fade-up" data-aos-delay="150">
+                    <div class="dresscode-card-info">
+                        <h3>Dress Code</h3>
+                        <p><strong>Traje: Social</strong></p>
+                        <p class="info-detail">Evite branco e tons claros.</p>
+                        <p class="dresscode-intro">Para que todos se sintam confortáveis e alinhados ao estilo da celebração:</p>
+                        <div class="dresscode-tips">
+                            <div class="dresscode-tip">
+                                <strong>Homens:</strong> Blazer, terno ou camisa social. Calça social ou sarja. Gravata opcional.
+                            </div>
+                            <div class="dresscode-tip">
+                                <strong>Mulheres:</strong> Vestido longo ou midi.
+                            </div>
+                        </div>
+                        <p class="dresscode-footer">Visual social, elegante e confortável!</p>
+                        <div class="dresscode-card-image">
+                            <img src="images/dress code.jpg" alt="Dress Code - Traje Social" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card hover-3d" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-inner">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 12v7a2 2 0 01-2 2H6a2 2 0 01-2-2v-7"/>
+                                <path d="M12 3v13M12 3l4 4M12 3L8 7"/>
+                                <rect x="2" y="7" width="20" height="5" rx="1"/>
+                            </svg>
+                        </div>
+                        <h3>Lista de Presentes</h3>
+                        <p>Confira nossa lista de presentes e nos ajude a construir nosso lar.</p>
+                        <a href="#presentes" class="btn btn-outline magnetic"><span>Ver Lista</span></a>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="confirmar" class="rsvp-section">
+        <div class="rsvp-bg">
+            <div class="rsvp-pattern"></div>
+        </div>
+        <div class="container">
+            <h2 class="section-title light">
+                <span class="title-reveal">Confirme sua Presença</span>
+            </h2>
+            <p class="section-subtitle light">Será uma honra ter você conosco neste dia especial</p>
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group floating" data-aos="fade-up" data-aos-delay="0">
+                    <input type="text" id="name" name="name" required placeholder=" ">
+                    <label for="name">Nome Completo</label>
+                    <div class="input-line"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group floating" data-aos="fade-up" data-aos-delay="200">
+                        <input type="tel" id="phone" name="phone" placeholder=" ">
+                        <label for="phone">Telefone</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="form-group floating" data-aos="fade-up" data-aos-delay="300">
+                        <select id="guests" name="guests" required>
+                            <option value="" disabled selected></option>
+                            <option value="0">Irei sozinho(a)</option>
+                            <option value="1">1 acompanhante</option>
+                            <option value="2">2 acompanhantes</option>
+                            <option value="3">3 acompanhantes</option>
+                        </select>
+                        <label for="guests">Acompanhantes</label>
+                        <div class="input-line"></div>
+                    </div>
+                </div>
+                <div class="form-group" data-aos="fade-up" data-aos-delay="400">
+                    <label class="group-label">Você irá comparecer?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="yes" required>
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Sim, confirmo presença</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="no">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Infelizmente não poderei ir</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group floating" data-aos="fade-up" data-aos-delay="500">
+                    <textarea id="message" name="message" rows="4" placeholder=" "></textarea>
+                    <label for="message">Mensagem para os Noivos (opcional)</label>
+                    <div class="input-line"></div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large magnetic" data-aos="fade-up" data-aos-delay="600">
+                    <span>Enviar Confirmação</span>
+                    <div class="btn-bg"></div>
+                    <svg class="btn-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Gifts Section -->
+    <section id="presentes" class="gifts-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-reveal">Lista de Presentes</span>
+            </h2>
+            <p class="section-subtitle">Sua presença é o nosso maior presente, mas se desejar nos presentear, aqui estão algumas sugestões para o nosso novo lar</p>
+
+            <!-- Gift Items Grid -->
+            <div class="gifts-grid">
+                <div class="gift-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="gift-item-image">
+                        <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=300&h=300&fit=crop" alt="Jogo de Lençóis" loading="lazy">
+                    </div>
+                    <div class="gift-item-info">
+                        <h4>Jogo de Lençóis Casal</h4>
+                        <p class="gift-item-price">R$ 220,00</p>
+                        <button class="btn btn-outline btn-small magnetic" onclick="selectGift('Jogo de Lençóis Casal', 220)">
+                            <span>Presentear</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gift-item" data-aos="fade-up" data-aos-delay="50">
+                    <div class="gift-item-image">
+                        <img src="https://images.unsplash.com/photo-1600369672770-985fd30004eb?w=300&h=300&fit=crop" alt="Conjunto de Toalhas" loading="lazy">
+                    </div>
+                    <div class="gift-item-info">
+                        <h4>Conjunto de Toalhas Premium</h4>
+                        <p class="gift-item-price">R$ 250,00</p>
+                        <button class="btn btn-outline btn-small magnetic" onclick="selectGift('Conjunto de Toalhas Premium', 250)">
+                            <span>Presentear</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gift-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gift-item-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=300&fit=crop" alt="Kit de Panelas" loading="lazy">
+                    </div>
+                    <div class="gift-item-info">
+                        <h4>Kit de Panelas</h4>
+                        <p class="gift-item-price">R$ 600,00</p>
+                        <button class="btn btn-outline btn-small magnetic" onclick="selectGift('Kit de Panelas', 600)">
+                            <span>Presentear</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gift-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="gift-item-image">
+                        <img src="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=300&h=300&fit=crop" alt="Cafeteira" loading="lazy">
+                    </div>
+                    <div class="gift-item-info">
+                        <h4>Cafeteira</h4>
+                        <p class="gift-item-price">R$ 450,00</p>
+                        <button class="btn btn-outline btn-small magnetic" onclick="selectGift('Cafeteira', 450)">
+                            <span>Presentear</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gift-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gift-item-image">
+                        <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=300&h=300&fit=crop" alt="Air Fryer" loading="lazy">
+                    </div>
+                    <div class="gift-item-info">
+                        <h4>Air Fryer</h4>
+                        <p class="gift-item-price">R$ 350,00</p>
+                        <button class="btn btn-outline btn-small magnetic" onclick="selectGift('Air Fryer', 350)">
+                            <span>Presentear</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gift-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="gift-item-image">
+                        <img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=300&h=300&fit=crop" alt="Robô Aspirador" loading="lazy">
+                    </div>
+                    <div class="gift-item-info">
+                        <h4>Robô Aspirador</h4>
+                        <p class="gift-item-price">R$ 1.200,00</p>
+                        <button class="btn btn-outline btn-small magnetic" onclick="selectGift('Robô Aspirador', 1200)">
+                            <span>Presentear</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gift-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="gift-item-image">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=300&h=300&fit=crop" alt="1 Ano de Academia" loading="lazy">
+                    </div>
+                    <div class="gift-item-info">
+                        <h4>1 Ano de Academia para o Noivo</h4>
+                        <p class="gift-item-price">R$ 1.200,00</p>
+                        <button class="btn btn-outline btn-small magnetic" onclick="selectGift('1 Ano de Academia para o Noivo', 1200)">
+                            <span>Presentear</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gift-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="gift-item-image">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=300&h=300&fit=crop" alt="Cama Box Casal" loading="lazy">
+                    </div>
+                    <div class="gift-item-info">
+                        <h4>Cama Box Casal</h4>
+                        <p class="gift-item-price">R$ 2.000,00</p>
+                        <button class="btn btn-outline btn-small magnetic" onclick="selectGift('Cama Box Casal', 2000)">
+                            <span>Presentear</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gift-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="gift-item-image">
+                        <img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=300&h=300&fit=crop" alt="Smart TV" loading="lazy">
+                    </div>
+                    <div class="gift-item-info">
+                        <h4>Smart TV Grande</h4>
+                        <p class="gift-item-price">R$ 2.500,00</p>
+                        <button class="btn btn-outline btn-small magnetic" onclick="selectGift('Smart TV Grande', 2500)">
+                            <span>Presentear</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gift-item" data-aos="fade-up" data-aos-delay="450">
+                    <div class="gift-item-image">
+                        <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=300&h=300&fit=crop" alt="Máquina de Lavar e Secar" loading="lazy">
+                    </div>
+                    <div class="gift-item-info">
+                        <h4>Máquina de Lavar e Secar</h4>
+                        <p class="gift-item-price">R$ 3.000,00</p>
+                        <button class="btn btn-outline btn-small magnetic" onclick="selectGift('Máquina de Lavar e Secar', 3000)">
+                            <span>Presentear</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gift-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="gift-item-image">
+                        <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=300&h=300&fit=crop" alt="Geladeira Inox" loading="lazy">
+                    </div>
+                    <div class="gift-item-info">
+                        <h4>Geladeira Inox Alta Capacidade</h4>
+                        <p class="gift-item-price">R$ 3.000,00</p>
+                        <button class="btn btn-outline btn-small magnetic" onclick="selectGift('Geladeira Inox Alta Capacidade', 3000)">
+                            <span>Presentear</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gift-item" data-aos="fade-up" data-aos-delay="550">
+                    <div class="gift-item-image">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=300&h=300&fit=crop" alt="Viagem Lua de Mel" loading="lazy">
+                    </div>
+                    <div class="gift-item-info">
+                        <h4>Viagem / Lua de Mel</h4>
+                        <p class="gift-item-price">R$ 5.000,00</p>
+                        <button class="btn btn-outline btn-small magnetic" onclick="selectGift('Viagem / Lua de Mel', 5000)">
+                            <span>Presentear</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PIX Section -->
+            <div class="pix-section" data-aos="fade-up">
+                <div class="pix-divider">
+                    <span>ou contribua com qualquer valor</span>
+                </div>
+                <div class="pix-card">
+                    <div class="pix-qrcode">
+                        <img src="images/PIX.jpg" alt="QR Code PIX">
+                    </div>
+                    <div class="pix-content">
+                        <h3>PIX</h3>
+                        <p>Escaneie o QR Code ou copie o código</p>
+                        <p class="pix-name">NATALY ALVES DE LIMA</p>
+                        <div class="pix-key" id="pixKey">00020126580014BR.GOV.BCB.PIX013602c03bf9-0685-4ec8-a056-6e193f3962465204000053039865802BR5920NATALY ALVES DE LIMA6009SAO PAULO62290525ZDkyNzQ2OGEtYTJlNy00ZGExL6304CB15</div>
+                        <button class="btn btn-primary magnetic" onclick="copyPix()">
+                            <span>Copiar Código PIX</span>
+                            <div class="btn-bg"></div>
+                            <svg class="copy-icon" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="footer-pattern"></div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-hearts">
+                <span class="heart" style="--delay: 0s"></span>
+                <span class="heart" style="--delay: 0.5s"></span>
+                <span class="heart" style="--delay: 1s"></span>
+            </div>
+            <div class="footer-names">
+                <span class="name-letter" style="--i: 0">N</span>
+                <span class="name-letter" style="--i: 1">a</span>
+                <span class="name-letter" style="--i: 2">t</span>
+                <span class="name-letter" style="--i: 3">a</span>
+                <span class="name-letter" style="--i: 4">l</span>
+                <span class="name-letter" style="--i: 5">y</span>
+                <span class="name-ampersand">&</span>
+                <span class="name-letter" style="--i: 6">J</span>
+                <span class="name-letter" style="--i: 7">o</span>
+                <span class="name-letter" style="--i: 8">ã</span>
+                <span class="name-letter" style="--i: 9">o</span>
+                <span class="name-letter" style="--i: 10"> </span>
+                <span class="name-letter" style="--i: 11">G</span>
+                <span class="name-letter" style="--i: 12">a</span>
+                <span class="name-letter" style="--i: 13">b</span>
+                <span class="name-letter" style="--i: 14">r</span>
+                <span class="name-letter" style="--i: 15">i</span>
+                <span class="name-letter" style="--i: 16">e</span>
+                <span class="name-letter" style="--i: 17">l</span>
+            </div>
+            <div class="footer-date">02.05.2026</div>
+            <div class="footer-divider">
+                <svg viewBox="0 0 200 20" class="footer-ornament">
+                    <path d="M0 10 Q50 0 100 10 Q150 20 200 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    <circle cx="100" cy="10" r="3" fill="currentColor"/>
+                </svg>
+            </div>
+            <p class="footer-credits">
+                <span>Desenvolvido com</span>
+                <svg class="heart-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <span class="toast-message"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
