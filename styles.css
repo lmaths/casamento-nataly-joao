@@ -1940,6 +1940,13 @@ h1, h2, h3, h4 {
     margin-bottom: var(--spacing-xl);
 }
 
+@media (max-width: 768px) {
+    .gifts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+    }
+}
+
 .gift-item {
     background-color: var(--color-bg);
     border-radius: 10px;
