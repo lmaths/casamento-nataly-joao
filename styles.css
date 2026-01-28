@@ -1945,6 +1945,26 @@ h1, h2, h3, h4 {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-sm);
     }
+
+    .gift-item-info {
+        padding: var(--spacing-sm);
+    }
+
+    .gift-item-info h4 {
+        font-size: 0.9rem;
+        line-height: 1.2;
+        margin-bottom: 4px;
+    }
+
+    .gift-item-price {
+        font-size: 0.85rem;
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .gift-item .btn-small {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.6rem;
+    }
 }
 
 .gift-item {
