@@ -1945,29 +1945,38 @@ h1, h2, h3, h4 {
 
     .gift-item {
         border-radius: 8px;
+        overflow: visible;
+    }
+
+    .gift-item-image {
+        aspect-ratio: 1;
     }
 
     .gift-item-info {
-        padding: 10px;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .gift-item-info h4 {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         line-height: 1.2;
         margin-bottom: 4px;
-        min-height: 2.4em;
+        text-align: center;
+        word-break: break-word;
     }
 
     .gift-item-price {
-        font-size: 0.75rem;
-        margin-bottom: 8px;
+        font-size: 0.7rem;
+        margin-bottom: 6px;
     }
 
-    .gift-item .btn-small {
-        width: 100%;
-        padding: 8px 5px;
-        font-size: 0.55rem;
+    .gift-item .btn-outline {
+        padding: 6px 10px;
+        font-size: 0.5rem;
         letter-spacing: 0.05em;
+        white-space: nowrap;
     }
 }
 
