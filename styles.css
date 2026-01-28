@@ -1940,52 +1940,66 @@ h1, h2, h3, h4 {
 @media (max-width: 768px) {
     .gifts-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 12px;
     }
 
     .gift-item {
         border-radius: 8px;
-        overflow: visible;
+        overflow: visible !important;
+        display: flex;
+        flex-direction: column;
     }
 
     .gift-item-image {
         aspect-ratio: 1;
+        border-radius: 8px 8px 0 0;
+        overflow: hidden;
     }
 
     .gift-item-info {
-        padding: 8px;
+        padding: 10px 8px 12px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        flex: 1;
+        min-height: auto;
     }
 
     .gift-item-info h4 {
         font-size: 0.7rem;
-        line-height: 1.2;
+        line-height: 1.3;
         margin-bottom: 4px;
         text-align: center;
         word-break: break-word;
+        min-height: 2.6em;
+        display: flex;
+        align-items: center;
     }
 
     .gift-item-price {
-        font-size: 0.7rem;
-        margin-bottom: 6px;
+        font-size: 0.75rem;
+        margin-bottom: 8px;
     }
 
     .gift-item .btn-outline {
-        padding: 6px 10px;
-        font-size: 0.5rem;
+        padding: 8px 12px;
+        font-size: 0.55rem;
         letter-spacing: 0.05em;
         white-space: nowrap;
+        min-height: 32px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 .gift-item {
     background-color: var(--color-bg);
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .gift-item:hover {
@@ -1997,6 +2011,8 @@ h1, h2, h3, h4 {
     aspect-ratio: 1;
     overflow: hidden;
     background-color: var(--color-bg-alt);
+    border-radius: 10px 10px 0 0;
+    flex-shrink: 0;
 }
 
 .gift-item-image img {
@@ -2144,6 +2160,33 @@ h1, h2, h3, h4 {
     .pix-divider::before,
     .pix-divider::after {
         width: calc(50% - 80px);
+    }
+}
+
+/* Gift Cards - Telas muito pequenas */
+@media (max-width: 400px) {
+    .gifts-grid {
+        gap: 8px;
+    }
+
+    .gift-item-info {
+        padding: 8px 6px 10px;
+    }
+
+    .gift-item-info h4 {
+        font-size: 0.65rem;
+        min-height: auto;
+    }
+
+    .gift-item-price {
+        font-size: 0.7rem;
+        margin-bottom: 6px;
+    }
+
+    .gift-item .btn-outline {
+        padding: 6px 8px;
+        font-size: 0.5rem;
+        min-height: 28px;
     }
 }
 
