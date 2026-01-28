@@ -1940,27 +1940,34 @@ h1, h2, h3, h4 {
 @media (max-width: 768px) {
     .gifts-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-sm);
+        gap: 10px;
+    }
+
+    .gift-item {
+        border-radius: 8px;
     }
 
     .gift-item-info {
-        padding: var(--spacing-sm);
+        padding: 10px;
     }
 
     .gift-item-info h4 {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
         line-height: 1.2;
         margin-bottom: 4px;
+        min-height: 2.4em;
     }
 
     .gift-item-price {
-        font-size: 0.85rem;
-        margin-bottom: var(--spacing-xs);
+        font-size: 0.75rem;
+        margin-bottom: 8px;
     }
 
     .gift-item .btn-small {
-        padding: 0.5rem 0.8rem;
-        font-size: 0.6rem;
+        width: 100%;
+        padding: 8px 5px;
+        font-size: 0.55rem;
+        letter-spacing: 0.05em;
     }
 }
 
