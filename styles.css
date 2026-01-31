@@ -240,6 +240,19 @@ h1, h2, h3, h4 {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.gifts-intro {
+    max-width: 700px;
+}
+
+.gifts-intro p {
+    margin-bottom: var(--spacing-xs);
+}
+
+.gifts-intro p:last-child {
+    margin-top: var(--spacing-sm);
+    margin-bottom: 0;
+}
+
 @keyframes fadeIn {
     to { opacity: 1; }
 }
@@ -1413,10 +1426,15 @@ h1, h2, h3, h4 {
     padding: var(--spacing-md);
 }
 
+.dresscode-card-expanded .dresscode-card-info .info-icon {
+    margin: 0 auto var(--spacing-sm);
+}
+
 .dresscode-card-expanded .dresscode-card-info h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: var(--spacing-xs);
     color: var(--color-primary);
+    text-align: center;
 }
 
 .dresscode-card-expanded .dresscode-card-info p {
@@ -1620,6 +1638,22 @@ h1, h2, h3, h4 {
 .rsvp-form {
     max-width: 700px;
     margin: 0 auto;
+}
+
+.rsvp-form-compact {
+    max-width: 500px;
+}
+
+.rsvp-form-compact .form-group {
+    margin-bottom: var(--spacing-sm);
+}
+
+.rsvp-intro p {
+    margin-bottom: var(--spacing-xs);
+}
+
+.rsvp-intro p:last-child {
+    margin-bottom: 0;
 }
 
 .form-row {
@@ -2092,16 +2126,16 @@ h1, h2, h3, h4 {
 .pix-card {
     display: flex;
     align-items: center;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-md);
     background-color: #ffffff;
     border-radius: 15px;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 .pix-qrcode {
-    width: 220px;
-    height: 220px;
+    width: 150px;
+    height: 150px;
     flex-shrink: 0;
 }
 
@@ -2149,8 +2183,8 @@ h1, h2, h3, h4 {
     }
 
     .pix-qrcode {
-        width: 200px;
-        height: 200px;
+        width: 130px;
+        height: 130px;
     }
 
     .pix-key {

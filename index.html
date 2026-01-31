@@ -3,7 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Casamento de Nataly e João Gabriel - Celebre conosco este momento especial">
+    <meta name="description" content="Casamento de Nataly e João Gabriel - 02 de Maio de 2026 - Celebre conosco este momento especial">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d4a574'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>">
+
+    <!-- Open Graph / WhatsApp / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nataly & João Gabriel - Nosso Casamento">
+    <meta property="og:description" content="Você está convidado para celebrar o nosso casamento! 02 de Maio de 2026 - São Paulo">
+    <meta property="og:image" content="images/casal.jpg">
+    <meta property="og:url" content="">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nataly & João Gabriel - Nosso Casamento">
+    <meta name="twitter:description" content="Você está convidado para celebrar o nosso casamento! 02 de Maio de 2026 - São Paulo">
+    <meta name="twitter:image" content="images/casal.jpg">
+
     <title>Nataly & João Gabriel - Nosso Casamento</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -174,13 +191,11 @@
                     </div>
                     <div class="card-glow"></div>
                 </div>
-                <div class="info-card hover-3d" data-aos="fade-up" data-aos-delay="50">
+                <div class="info-card info-card-image hover-3d" data-aos="fade-up" data-aos-delay="50">
+                    <div class="card-image">
+                        <img src="images/festa.jpg" alt="Restaurante Famiglia Geraci" loading="lazy">
+                    </div>
                     <div class="card-inner">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/>
-                            </svg>
-                        </div>
                         <h3>A Festa</h3>
                         <p>Restaurante Famiglia Geraci</p>
                         <p class="info-detail">Rua Fidêncio Ramos, 69 - Vila Olímpia</p>
@@ -198,19 +213,24 @@
                             </svg>
                         </div>
                         <h3>Cronograma</h3>
-                        <p>20h - Início da Cerimônia</p>
+                        <p class="info-detail">20h - Início da Cerimônia</p>
                         <p class="info-detail">21h30 - Recepção da Festa</p>
                         <p class="info-detail">22h - Fotos e Coquetel</p>
                         <p class="info-detail">22h30 - Início do Jantar</p>
                         <p class="info-detail">01h - Encerramento</p>
                         <div class="info-divider"></div>
-                        <p class="info-detail"><strong>Estacionamento Igreja:</strong> Gratuito</p>
+                        <p class="info-detail"><strong>Estacionamento igreja (vagas limitadas):</strong> Gratuito</p>
                         <p class="info-detail"><strong>Estacionamento Festa:</strong> Valet R$ 30,00</p>
                     </div>
                     <div class="card-glow"></div>
                 </div>
                 <div class="info-card dresscode-card-expanded hover-3d" data-aos="fade-up" data-aos-delay="150">
                     <div class="dresscode-card-info">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2C10.5 2 9 3 9 4.5L6 4l1.5 3L9 8v2l-1 1 3.5 11h1l3.5-11-1-1V8l1.5-1L18 4l-3 .5C15 3 13.5 2 12 2z"/>
+                            </svg>
+                        </div>
                         <h3>Dress Code</h3>
                         <p><strong>Traje: Social</strong></p>
                         <p class="info-detail">Evite branco e tons claros.</p>
@@ -257,30 +277,21 @@
             <h2 class="section-title light">
                 <span class="title-reveal">Confirme sua Presença</span>
             </h2>
-            <p class="section-subtitle light">Será uma honra ter você conosco neste dia especial</p>
-            <form class="rsvp-form" id="rsvpForm">
+            <div class="section-subtitle light rsvp-intro">
+                <p>Será uma honra ter você conosco nesse dia especial.</p>
+                <p>Para nos ajudar na organização, pedimos que cada pessoa realize a confirmação individual, inclusive casais.</p>
+                <p><strong>Por favor, confirme sua presença até o dia 02 de abril (02/04).</strong></p>
+            </div>
+            <form class="rsvp-form rsvp-form-compact" id="rsvpForm">
                 <div class="form-group floating" data-aos="fade-up" data-aos-delay="0">
                     <input type="text" id="name" name="name" required placeholder=" ">
                     <label for="name">Nome Completo</label>
                     <div class="input-line"></div>
                 </div>
-                <div class="form-row">
-                    <div class="form-group floating" data-aos="fade-up" data-aos-delay="200">
-                        <input type="tel" id="phone" name="phone" placeholder=" ">
-                        <label for="phone">Telefone</label>
-                        <div class="input-line"></div>
-                    </div>
-                    <div class="form-group floating" data-aos="fade-up" data-aos-delay="300">
-                        <select id="guests" name="guests" required>
-                            <option value="" disabled selected></option>
-                            <option value="0">Irei sozinho(a)</option>
-                            <option value="1">1 acompanhante</option>
-                            <option value="2">2 acompanhantes</option>
-                            <option value="3">3 acompanhantes</option>
-                        </select>
-                        <label for="guests">Acompanhantes</label>
-                        <div class="input-line"></div>
-                    </div>
+                <div class="form-group floating" data-aos="fade-up" data-aos-delay="200">
+                    <input type="tel" id="phone" name="phone" placeholder=" ">
+                    <label for="phone">Telefone</label>
+                    <div class="input-line"></div>
                 </div>
                 <div class="form-group" data-aos="fade-up" data-aos-delay="400">
                     <label class="group-label">Você irá comparecer?</label>
@@ -317,7 +328,16 @@
             <h2 class="section-title">
                 <span class="title-reveal">Lista de Presentes</span>
             </h2>
-            <p class="section-subtitle">Sua presença é o nosso maior presente, mas se desejar nos presentear, aqui estão algumas sugestões para o nosso novo lar</p>
+            <div class="section-subtitle gifts-intro">
+                <p>A sua presença no nosso grande dia é, sem dúvida, o presente mais especial para nós 💍✨</p>
+                <p>Mas, se desejar nos presentear, optamos por <strong>não receber presentes físicos.</strong></p>
+                <p>Criamos uma lista simbólica, com sugestões de valores, apenas como referência.</p>
+                <p><strong>Você pode escolher uma das opções ou presentear com o valor que mais fizer sentido para você</strong> ✨</p>
+                <p><strong>O presente poderá ser feito via PIX ou em dinheiro, no valor escolhido.</strong></p>
+                <p><strong>As informações da chave PIX estão disponíveis abaixo.</strong></p>
+                <p>Cada contribuição nos ajuda muito na construção do nosso lar e na realização dos nossos sonhos.</p>
+                <p>Obrigada por fazer parte desse momento tão especial pra nós 💖</p>
+            </div>
 
             <!-- Gift Items Grid -->
             <div class="gifts-grid">
@@ -490,9 +510,22 @@
                     </div>
                 </div>
 
+                <div class="gift-item" data-aos="fade-up" data-aos-delay="625">
+                    <div class="gift-item-image">
+                        <img src="images/disney.jpg" alt="Ingresso Disney" loading="lazy">
+                    </div>
+                    <div class="gift-item-info">
+                        <h4>Ingresso Disney (Lua de Mel)</h4>
+                        <p class="gift-item-price">R$ 1.000,00</p>
+                        <button class="btn btn-outline btn-small magnetic" onclick="selectGift('Ingresso Disney (Lua de Mel)', 1000)">
+                            <span>Presentear</span>
+                        </button>
+                    </div>
+                </div>
+
                 <div class="gift-item" data-aos="fade-up" data-aos-delay="650">
                     <div class="gift-item-image">
-                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=300&h=300&fit=crop" alt="1 Ano de Academia" loading="lazy">
+                        <img src="images/noivoacademia.jpg" alt="1 Ano de Academia" loading="lazy">
                     </div>
                     <div class="gift-item-info">
                         <h4>1 Ano de Academia para o Noivo</h4>
