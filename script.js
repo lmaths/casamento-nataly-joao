@@ -422,13 +422,13 @@ function initFormValidation() {
             body: JSON.stringify(data)
         })
         .then(() => {
-            showToast('Confirmação enviada com sucesso! Obrigado!');
-            form.reset();
+            // Esconder formulário e mostrar mensagem de sucesso
+            const successMsg = document.getElementById('rsvpSuccess');
+            form.style.display = 'none';
+            successMsg.style.display = 'block';
 
-            // Reset floating labels
-            form.querySelectorAll('.form-group.floating').forEach(group => {
-                group.classList.remove('focused');
-            });
+            // Scroll suave para a mensagem de sucesso
+            successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
         })
         .catch((error) => {
             console.error('Erro:', error);
